@@ -1,9 +1,13 @@
-# Why using libvirt fa
+# Why using libvirt as default provider for vagrant?
 - avoid incompatibility between virtualbox and vagrant.
-- 
+- consume less resources since utilize libvirt 
 Mock-up command
 
 # Step to set up your vagrant box 
+0 pre-install requirepackages
+1 
+
+
 
 ```bash
 
@@ -49,10 +53,13 @@ end
 **Note**: Don't assume that the images downloaded from the cloud stable and ready to deploy as good as virtualbox providers is. When using libvirt, you have to define your vm in the Vagrantfile.
 
 Sources used:
-Known bug:
+**Known bug**:
+
 * https://github.com/vagrant-libvirt/vagrant-libvirt/issues/659
-Offical documentation:
+
+**Offical documentation**:
+
 * https://computingforgeeks.com/using-vagrant-with-libvirt-on-linux/
-https://docs.docker.com/install/linux/docker-ce/ubuntu/
+* https://docs.docker.com/install/linux/docker-ce/ubuntu/
 
 
