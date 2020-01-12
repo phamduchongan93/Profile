@@ -13,4 +13,7 @@ The followng links are links of most reliable and reliable docker images to depl
 | docker pull kanboard/kanboard | https://hub.docker.com/r/kanboard/kanboard | 
 | docker pull dperson/samba     | https://hub.docker.com/r/dperson/samba     |
 
+# Cheatsheet (virsh/vagrant/docker)
 
+* Docker
+* Vagrant
