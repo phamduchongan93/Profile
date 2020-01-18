@@ -8,10 +8,11 @@
 The followng links are links of most reliable and reliable docker images to deploy on your system via docker engine:
 
 
-| **Docker command**  					| **Docker Images link** 												 |
-| :---------------------------- | :----------------------------------------- |
-| docker pull kanboard/kanboard | https://hub.docker.com/r/kanboard/kanboard | 
-| docker pull dperson/samba     | https://hub.docker.com/r/dperson/samba     |
+| **Docker command**						 	 | **Docker Images link** 												 |
+| :----------------------------		 | :----------------------------------------- |
+| docker pull kanboard/kanboard		 | https://hub.docker.com/r/kanboard/kanboard | 
+| docker pull dperson/samba				 | https://hub.docker.com/r/dperson/samba     |
+| docker pull wouterds/rpi-jenkins | https://github.com/wouterds/rpi-jenkins    | 
 
 # Cheatsheet (virsh/vagrant/docker)
 
