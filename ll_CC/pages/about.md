@@ -10,5 +10,5 @@ Linkln: https://www.linkedin.com/in/an-pham-69a714158/
 <a href="#" class="fa fa-facebook"></a>
 <a href="#" class="fa fa-twitter"></a>
  </div>
-Github.com: https://github.io/phamduchongan93
+Github: [https://github.io/phamduchongan93](https://github.io/phamduchongan93)
 
