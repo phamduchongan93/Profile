@@ -1,4 +1,4 @@
-# Howto create a vm #
+# Howto Create a vm #
 The purpose of this article is describing the process of building a vm for system testing.
 
 ## Description ##
@@ -10,7 +10,7 @@ This guide is used to build a vm. The process includes network configuration, st
  To generate storage pool to store iso images, type this following command.
 
 `virsh pool`
-## Steps to build the vm ##
+## Steps to Build the VM ##
 0. To pre-check if libvirt is installed and enabled, type the following command 
 1. Create the storage pool
 2. Name the vm domain
@@ -36,7 +36,7 @@ virsh pool-start <pool-name>
 To verify your pool
 `virsh pool-list --all --details`
 
-## Manage kvm ##
+## Manage KVM ##
 Type `virh list` to view current running vm
 
 - To shut down the VM ##
@@ -47,11 +47,11 @@ virsh shutdown <vm-name>
 
 
 
-# Set up network interface #
+# Set up Network Interface #
 
 
 
-## Method 2 - Using the virt-install ##
+## Method 2 - Using the `virt-install` ##
 
 ```
 # start a VM build to control via vnc 
@@ -60,7 +60,7 @@ virt-install --name <virtual-name> --ram 2048 --file=/home/anpham/images/ --vnc 
 fa
 ```
 
-# System testing #
+# System Testing #
 
 Define how you are going to build your system
 - block device
