@@ -13,5 +13,3 @@ apt-get install libxslt-dev libxml2-dev libvirt-dev zlib1g-dev ruby-dev
 libvirt providers only work with this plugin
 **note** Sometimes, the plugin install is broken and has the dependency conflict, type in `vagrant plugin expunge` to reinstall the plugin.
 
-3.  
-

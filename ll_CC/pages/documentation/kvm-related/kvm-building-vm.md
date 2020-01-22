@@ -1,4 +1,5 @@
-# Howto Create a vm #
+# Howto create a kvm vm #
+>>>>>>> editing
 The purpose of this article is describing the process of building a vm for system testing.
 
 ## Description ##
@@ -12,13 +13,15 @@ This guide is used to build a vm. The process includes network configuration, st
 `virsh pool`
 ## Steps to Build the VM ##
 0. To pre-check if libvirt is installed and enabled, type the following command 
+ To check if your cpu support virtualization, type the following command `grep -E 'svm|vmx' /proc/cpuinfo` 
+ To check if virtualizaton driver loaded, type the following command `lsmod | grep kvm`
+ In order to have kvm vm running the two command above has to produce output.
 1. Create the storage pool
 2. Name the vm domain
 
 ## Install kvm guest
 ```bash
 virt-install --network bridge=virbr0 --name myvm1 \
-
 --ram =2046 
 ```
 
