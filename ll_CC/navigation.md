@@ -19,11 +19,11 @@
   -- (Read: http://dynalon.github.io/mdwiki/#!quickstart.md#Adding_a_navigation)
   -->
 
-[About](pages/about.md)
 [Download](pages/download.md)
 [Projects](pages/projects/projects.md)
 [Guides](pages/guides.md)
-
+[Tips and Drills](pages/documentation/tips-and-tips/main.md)
+[About](pages/about.md)
 <!-- A more complex navigation example: ----------------------------------------
 
 [Menu Item 1]()
