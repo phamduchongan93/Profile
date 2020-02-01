@@ -1,7 +1,7 @@
-# Dowload Page
+# Download Page
 
 
-# Link to offical linux Images
+# Link to official Linux Images
 | Source																														 | Distro   |
 | -------------------------------------------------------------------| -------- |
 | http://ftp5.gwdg.de/pub/opensuse/distribution/openSUSE-stable/iso/ | opensuse |
