@@ -24,6 +24,7 @@
 [Guides](pages/guides.md)
 [Tips and Drills](pages/documentation/tips-and-tips/main.md)
 [About](pages/about.md)
+
 <!-- A more complex navigation example: ----------------------------------------
 
 [Menu Item 1]()
