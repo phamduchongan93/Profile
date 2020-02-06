@@ -38,15 +38,11 @@ To verify your pool
 `virsh pool-list --all --details`
 
 ## Manage KVM ##
-Type `virh list` to view current running vm
-- To shut down the VM ##
-```
-virsh shutdown <vm-name>
-```
-- Destroy the VM
-```
-virsh destroy <vm-name>
-```
+- type `virsh list` to view current running vm
+- type `virsh list --all` to view all installed vm
+- to shut down the VM  `virsh shutdown <vm-name>`
+- to destroy the VM, type `virsh destroy <vm-name>`
+- type `virsh dumpxml <vm-name>` to view the specs of your vm
 
 # Set up Network Interface #
 
