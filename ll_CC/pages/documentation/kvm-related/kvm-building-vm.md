@@ -8,6 +8,7 @@ This guide is used to build a vm. The process includes network configuration, st
 - domain~VM name
 - storage pool (could me a directory file or block device)
  To generate storage pool to store iso images, type this following command.
+- optional: some user prefer to config an bridge interface prior to their installation.
 
 `virsh pool`
 ## Steps to Build the VM ##
@@ -20,9 +21,13 @@ This guide is used to build a vm. The process includes network configuration, st
 
 ## Install kvm guest
 ```bash
-virt-install --network bridge=virbr0 --name myvm1 \
---ram =2046 
+virt-install -n ubuntu-virt --description "build from virt-install" --os-type=Linux --ram=2048 --vcpu=2 --disk path=/var/lib/libvirt/images/ubuntu-virt,bus=virtio,size=60 --graphic vnc --cdrom ~/images/ubuntu-18.04.3-desktop-amd64.iso --noautoconsole
 ```
+ -n indicates name of your vm (your domain)
+ --graphic indicates that you will run you vm with graphic, it's also a way you interact with your vm
+ --cdroom find the iso images on your local machine
+ --noautoconsole will stop the the virst install to prompt a remote viewing session. You can ignore this one to test out what really happen.
+ 
 
 ## Manage/Configure lvm 
 This part is used to describe the process of setting up block device to use for vm. If you build a workstation
