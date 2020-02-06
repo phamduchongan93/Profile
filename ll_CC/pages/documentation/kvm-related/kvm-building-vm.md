@@ -21,16 +21,10 @@ This guide is used to build a vm. The process includes network configuration, st
 
 ## Install kvm guest
 ```bash
-virt-install -n ubuntu-virt --description "build from virt-install" --os-type=Linux --ram=2048 --vcpu=2 --disk path=/var/lib/libvirt/images/ubuntu-virt,bus=virtio,size=60 --graphic vnc --cdrom ~/images/ubuntu-18.04.3-desktop-amd64.iso --noautoconsole
 ```
- -n indicates name of your vm (your domain)
- --graphic indicates that you will run you vm with graphic, it's also a way you interact with your vm
- --cdroom find the iso images on your local machine
- --noautoconsole will stop the the virst install to prompt a remote viewing session. You can ignore this one to test out what really happen.
- 
 
 ## Manage/Configure lvm 
-This part is used to describe the process of setting up block device to use for vm. If you build a workstation
+This part is used to describe the process of setting up block device to use for vm. If you build a workstation, there times you need an external block device to work on due to the limitation of storage. The following steps will set up an external sata drive that is formated and used only with virsh.
 
 ### set-up the storage pool
 
@@ -45,14 +39,14 @@ To verify your pool
 
 ## Manage KVM ##
 Type `virh list` to view current running vm
-
 - To shut down the VM ##
 ```
 virsh shutdown <vm-name>
 ```
 - Destroy the VM
-
-
+```
+virsh destroy <vm-name>
+```
 
 # Set up Network Interface #
 
@@ -62,9 +56,12 @@ virsh shutdown <vm-name>
 
 ```
 # start a VM build to control via vnc 
-virt-install --name <virtual-name> --ram 2048 --file=/home/anpham/images/ --vnc --cdrom=/
-
-fa
+virt-install -n ubuntu-virt --description "build from virt-install" --os-type=Linux --ram=2048 --vcpu=2 --disk path=/var/lib/libvirt/images/ubuntu-virt,bus=virtio,size=60 --graphic vnc --cdrom ~/images/ubuntu-18.04.3-desktop-amd64.iso --noautoconsole
+```
+ -n indicates name of your vm (your domain)
+ --graphic indicates that you will run you vm with graphic, it's also a way you interact with your vm
+ --cdroom find the iso images on your local machine
+ --noautoconsole will stop the the virst install to prompt a remote viewing session. You can ignore this one to test out what really happen.
 ```
 
 # System Testing #
@@ -92,3 +89,6 @@ virsh destroy <vmname>
 # undefine the vmname 
 virsh undefine <vmname>
 ```
+Sources:
+https://estl.tech/virtual-machines-with-kvm-on-ubuntu-18-04-f3a756527705
+https://github.com/TigerVNC/tigervnc
