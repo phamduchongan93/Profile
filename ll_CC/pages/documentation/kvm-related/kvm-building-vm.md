@@ -25,7 +25,6 @@ This guide is used to build a vm. The process includes network configuration, st
 ## Manage/Configure lvm 
 This part is used to describe the process of setting up block device to use for vm. If you build a workstation, there times you need an external block device to work on due to the limitation of storage. The following steps will set up an external sata drive that is formated and used only with virsh.
 
-### set-up the storage pool
 
 ```
 virsh pool-define-as <pool-name> --type dir --target <directory_to_store>
@@ -43,7 +42,6 @@ To verify your pool
 - to destroy the VM, type `virsh destroy <vm-name>`
 - type `virsh dumpxml <vm-name>` to view the specs of your vm
 
-# Set up Network Interface #
 
 
 
@@ -67,6 +65,9 @@ virt-install -n ubuntu --description "run in console mode" --os-type=Linux --ram
 ```
 
 Notice the '--graphic' is now changed to non, and '--extra-args' option is added.
+
+# Set up Network Interface #
+
 # System Testing #
 
 Define how you are going to build your system
