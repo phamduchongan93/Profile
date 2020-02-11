@@ -21,7 +21,7 @@ anpham@dell-laptop:~$ docker run -d --name kanboard -p 80:80 -t kanboard/kanboar
 a2ec198474c21f41cc9e0a13ade740fe354944a9e0884e9438a50053708a9e8f
 docker: Error response from daemon: driver failed programming external connectivity on endpoint kanboard (34579dbac4366c6a7a582f3a001029c8afd3fb1ef36020fe9fae86bab622724b): Error starting userland proxy: listen tcp 0.0.0.0:80: bind: address already in use.
 ```
-This mean some service is using your port 80, thus the following command will help to find the port
+This mean some service is using your port 80. The following command will help to find the port
 `sudo netstat -pna | grep :80`
 In my case, you can see that this service is using the port 
 ```
