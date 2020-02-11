@@ -36,3 +36,12 @@ I was able to find a way to stop this service by typing one of the following com
 `sudo service lighttpd stop `
 The **lighttpd** service is the one caused the problem
 
+2. Error loading config file:stat /home/user/.docker/config.json:Permission Denied
+ This issue arised because the config.json is not set to docker group and current user as owner.
+`ls /home/<youruser>/.docker/config.json`
+The following is sample result.
+`-rw------- 1 anpham docker 181 Feb 11 09:17 config.json`
+I will type the following to change ownership of user and group
+`sudo chown anpham docker config.json`
+This will set the file's ownership to **anpham**, and it's belonged to **docker**************** group now.
+ 
