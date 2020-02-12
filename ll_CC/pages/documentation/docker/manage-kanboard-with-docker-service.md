@@ -9,6 +9,8 @@
 kanboard is a well-provided platform, you can add users from your current host system as authetication portal for verification.
 
 ## Step3: Turn off/on service
+- Go to your favorite browser and type the following address to access the service
+`0.0.0.0:80`
 
 ## Side Note:
 To destory all container and start over, you can use the following command.
