@@ -1,7 +1,7 @@
 ## Sytem building
 [Build VM (kvm) for system testing](documentation/kvm-related/kvm-building-vm.md)
 [Build vagrant box with libvirt provider](documentation/kvm-related/vagrant-libvirt-building.md)
-[Manage/confige bluetooth devices via cli](documentation/docker/manage-kanboard-with-docker-service.md)
+[Manage/config bluetooth devices via cli](documentation/bluetooth/file-transfer.md)
 [Run kanboard (trello alternatives) on localhost](documentation/docker/manage-kanboard-with-docker-service.md)
 
 ## Sytem tunning
