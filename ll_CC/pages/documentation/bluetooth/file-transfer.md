@@ -13,7 +13,7 @@ Find the location that you want to store your sending files, and type the follow
 `anpham@dell-laptop:~/Pictures$ bt-obex -s`
 After this, you should be able to send files from your phone to laptop.
 
-I will have the following result 
+The following output is desired:
 
 ```
 [OBEX Server] Transfer started
@@ -31,4 +31,4 @@ Please verify if your file exists on your system.
 
 
 # Conclusion: 
-- I have been using this method of file transferring during my picture shooting. The routine is often related to taking pictures and send it to my laptop for editing and uploading. The PAN (personal area network) is proven to be more reliable than sftp file transfer which require a central access point.
+I have been using this method of file transferring during my picture shooting. My routine is often related to taking pictures and sending it to my laptop for editing and uploading. The PAN (personal area network) is proven to be more reliable than sftp file transfer which requires a central access point.
