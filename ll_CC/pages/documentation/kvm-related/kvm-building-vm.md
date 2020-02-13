@@ -66,6 +66,16 @@ virt-install -n ubuntu --description "run in console mode" --os-type=Linux --ram
 
 Notice the '--graphic' is now changed to non, and '--extra-args' option is added.
 
+# Connect to VM
+- Based on your VM deploy parameter or your vm specs, you connect them differently.
+- To view the graphic of your vm, use the following command
+	* `virsh list --all` will display the the current install vm or domain
+ * `virsh dumpxml <vm-name> | grep graphic` will display the port associated with graphic. Example of output:
+   ```
+    <graphics type='spice' port='5900' autoport='yes' listen='127.0.0.1'>
+    </graphics>
+   ```
+- To connect to vm, type the following command `remote-viewer spice://127.0.0.1:5900`. This is because the graphic type I'm using is **'spice'**. In case of **'vnc'** graphic, type the following command `vncviewer <hostname>:<portnumber>`
 # Set up Network Interface #
 
 # System Testing #
