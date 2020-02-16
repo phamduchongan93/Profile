@@ -25,7 +25,14 @@ This guide is used to build a vm. The process includes network configuration, st
 ## Manage/Configure lvm 
 This part is used to describe the process of setting up block device to use for vm. If you build a workstation, there times you need an external block device to work on due to the limitation of storage. The following steps will set up an external sata drive that is formated and used only with virsh.
 
+```
+vgcreate lab_kvm_storage /dev/sdb
+lvcreate -1 +100%FREE -n lab_kvm_lv lab_kvm_storage
+mkfs.xfs /dev/mapper/lab_kvm_storage-lab_kvm_lv 
 
+
+
+## Use directory as storage pools
 ```
 virsh pool-define-as <pool-name> --type dir --target <directory_to_store>
 virsh pool-autostart <pool-name> 
