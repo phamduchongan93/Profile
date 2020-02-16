@@ -1,1 +1,5 @@
 [Disk clone and back up with dd command](dd-for-disk-backup.md)
+[Create bootable usb](create-live-usb.md)
+[Locate files and perform command quickly](find-command.md)
+[Mounting block devices](howto-manage-block-device.md)
+[](troubleshoot-hardware.md)
