@@ -1,5 +1,6 @@
-# Wiping the block device
+# Manage block device
 
+# Wipe the block device
 ```
 lsblk # find the block device
 dd if=/dev/zero of=/dev/<device_name> bs=4M
@@ -25,10 +26,10 @@ mount -t <formatsystem> -o - /dev/sdx /mnt/usb1
 
 Because different filestems have the different format hence you have to mount them differently 
 
-## case 1 - ntfs filesystem 
+## Case 1 - ntfs filesystem 
 `sudo mount -t ntfs -o rw,uid=<your_current_user_id> /dev/sdX /mnt/<name_of_your_device>`
 
-## case 2 - ext4/ext3 filesystem
+## Case 2 - ext4/ext3 filesystem
 `sudo mount -t -o rw /dev/sdX /mnt/<name_of_your_device>`
 
 **Note** you wont be able to write files on this new mounted directory since the ownership is belonged to root. Therefore, you have no choice other than changing the ownership of the new directory.
