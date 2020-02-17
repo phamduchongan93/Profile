@@ -7,7 +7,7 @@ As you research around, the dd command is powerful and required proper confident
 - you can't perform dd command on a living system, meaning you must unmount the drive first. If I am mouting the `/dev/sda` drive and using it as a root directory I can't clone it to an image or to another disk. Therefore, you must create a live usb to perform dd command.  Some people claim that you can remount your current filesystem into readonly, this will prevent changes on the drive. User may perform dd command with readonly filesystem. This doesn't work all the time since your system often have daemons require read and write on the system.
 
 
-As mentioned above, we will need an live usb to perform the backup. Follow this instruction to create a **live usb **.
+As mentioned above, we will need an live usb to perform the backup. Follow this [instruction](create-live-usb.md) to create a **live usb **.
 
 
 Now, lets overview what commands we will use.
@@ -24,9 +24,6 @@ sda
 sdb
 ```
 In this scenario, I will clone the the sda to an image file stored on the sdb disk. Notice that I haven't create a partition for second device. After the create a new pariton I should be able too find the filestem type on the new drive and mount it. Follow this intruction for more details of mounting.
-
-
-
 
 
 # Use Case 
