@@ -24,7 +24,7 @@ find: ‘/home/anpham/.cache/dconf’: Permission denied
 /home/anpham/images/ubuntu-18.04.3-desktop-amd64.iso
 /home/anpham/Downloads/android-x86-9.0-rc2.iso
 ```
-4. In this case I want to create an ubuntu image
+4. After locating the iso, I perform the following dd command
 `sudo dd if='/home/anpham/images/ubuntu-18.04.3-desktop-amd64.iso' of=/dev/sdb status=progress bs=4M` 
 
 

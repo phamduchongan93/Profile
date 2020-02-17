@@ -29,7 +29,7 @@ In this scenario, I will clone the the sda to an image file stored on the sdb di
 
 
 
-# use case 
+# Use Case 
 To verify that you can boot your system with new cloned ssd or hdd.
 type `parted -l`
 
