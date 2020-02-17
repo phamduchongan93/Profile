@@ -1,5 +1,5 @@
 # Create a live bootable usb from an iso image
-In this task, I prefer it's to be as simple as possible, thus it only involve wiping the drive and flashing the usb.
+In this task, we will perform it as simple as possible, it only involve wiping the drive and flashing the usb.
 
 1. Locate the block usb device.
 ```
