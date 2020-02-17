@@ -25,7 +25,7 @@ This guide is used to build a vm. The process includes network configuration, st
 ## Manage/Configure lvm 
 This part is used to describe the process of setting up block device to use for vm. If you build a workstation, there times you need an external block device to work on due to the limitation of storage. The following steps will set up an external sata drive that is formated and used only with virsh.
 
-**Note**: the external drive has to be empty. Please follow this guide to wipe your drive.
+**Note**: the external drive has to be empty. Please follow this [guide](../tips-and-tips/howto-manage-block-device.md) to wipe your drive.
 
 ```
 vgcreate lab_kvm_storage /dev/sdb
