@@ -1,0 +1,9 @@
+- Build homelab with virsh kvm 
+  - Component of virsh home lab
+    - NAT
+    - VM guests
+- Build homelab with gns3 
+  - virtual network
+  - cisco virtual devices
+  - docker container
+  - vm container
