@@ -52,7 +52,9 @@ To verify your pool
 - to shut down the VM  `virsh shutdown <vm-name>`
 - to destroy the VM, type `virsh destroy <vm-name>`
 - type `virsh dumpxml <vm-name>` to view the specs of your vm
-
+- type `virsh suspend <vm-name>/<domain-id>` to suspend your vm
+- type `virsh start <vm-name>/<domain-id>` to start your vm
+- type `virsh shutdown <vm-name>/<domain-id>` to turn off your vm
 
 
 
