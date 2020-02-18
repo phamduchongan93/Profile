@@ -23,6 +23,7 @@
 [Projects](pages/projects/projects.md)
 [Guides](pages/guides.md)
 [Tips and Drills](pages/documentation/tips-and-tips/main.md)
+[Homelab](pages/documentation/homelab/list.md)
 [About](pages/about.md)
 
 <!-- A more complex navigation example: ----------------------------------------
