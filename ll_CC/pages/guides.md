@@ -4,6 +4,9 @@
 [Manage/config bluetooth devices via cli](documentation/bluetooth/file-transfer.md)
 [Run kanboard (trello alternatives) on localhost](documentation/docker/manage-kanboard-with-docker-service.md)
 
+## Installing VM Guest
+[Windows Server 2012](documentation/kvm-related/install-windows-2012-server.md)
+
 ## Sytem tunning
 
 ## Reliable docker images

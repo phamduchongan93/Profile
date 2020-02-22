@@ -74,7 +74,7 @@ Where:
 Most of the time, we prefer to run our vm headless, so I often add console argument. In my case, I would deploy the following.
 
 ```
-virt-install -n ubuntu --description "run in console mode" --os-type=Linux --ram-2048 --vcpu=2 --disk path=//var/lib/libvirt/images/ubuntu-virt,bus=virtio,size=60 --graphic none --cdrom ~/images/ubuntu-18.04.3-desktop-amd64.iso --extra-args="console=tty0 console=ttyS0,115200" --check all=off
+virt-install -n ubuntu --description "run in console mode" --os-type=Linux --ram-2048 --vcpu=2 --disk path=//var/lib/libvirt/images/ubuntu-virt,bus=virtio,size=60 --graphic none --location ~/images/ubuntu-18.04.3-desktop-amd64.iso --extra-args="console=tty0 console=ttyS0,115200" --check all=off
 ```
 
 Notice the '--graphic' is now changed to non, and '--extra-args' option is added.
