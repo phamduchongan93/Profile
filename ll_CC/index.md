@@ -1,4 +1,4 @@
-# Welcome to my website
+# Welcome to My Website
 
 ## Introduction 
 - My name is An Pham. This is the website I often use to document my process when deploying a new system. I try to implement proper documentation as best as I can, so my work is beneficial for others Linux Enthusiast.

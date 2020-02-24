@@ -88,6 +88,7 @@ Notice the '--graphic' is now changed to non, and '--extra-args' option is added
     <graphics type='spice' port='5900' autoport='yes' listen='127.0.0.1'>
     </graphics>
    ```
+- The other method is using `virsh command`. Type `virsh domdisplay --domain <domain_name>`
 - To connect to vm, type the following command `remote-viewer spice://127.0.0.1:5900`. This is because the graphic type I'm using is **'spice'**. In case of **'vnc'** graphic, type the following command `vncviewer <hostname>:<portnumber>`
 # Set up Network Interface #
 
