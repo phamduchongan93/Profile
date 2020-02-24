@@ -1,13 +1,13 @@
-## Sytem building
+## System Building
 [Build VM (kvm) for system testing](documentation/kvm-related/kvm-building-vm.md)
 [Build vagrant box with libvirt provider](documentation/kvm-related/vagrant-libvirt-building.md)
 [Manage/config bluetooth devices via cli](documentation/bluetooth/file-transfer.md)
 [Run kanboard (trello alternatives) on localhost](documentation/docker/manage-kanboard-with-docker-service.md)
 
-## Sytem tunning
-[Virsh management guide ](documentation/kvm-related/manage-kvm.md)
+## Sytem Tunning
+[Virsh Management Guide ](documentation/kvm-related/manage-kvm.md)
 
-## Reliable docker images
+## Reliable Docker Images
 The followng links are links of most reliable and reliable docker images to deploy on your system via docker engine:
 
 | **Docker command**						 	 | **Docker Images link** 												 |
