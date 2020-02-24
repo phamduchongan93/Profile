@@ -1,6 +1,6 @@
-# Snapshot
+# Snapshot Guide
 
-## List current snapshots
+## List Current Snapshots
 
 ```
 virsh snapshot-list <domain-name>
@@ -12,17 +12,10 @@ virsh snapshot-list <domain-name>
 virsh snapshot-create-as --domain <windows-server-2012> --name "Fist-launch" --description "first installed vm"
 ```
 
-## To check the details of a snapshot
+## To Check the Details of a Snapshot
 
-## To revert to a snapshot (snapshot restore)
+## To Revert to a Snapshot (Snapshot Restore)
 
-## Back up
-```bash
-  virsh shutdown <domain_name>
-  cp -v <path_of_vm>  <path_to_backup>
-  virsh dumpxml <domain_name> > config.xml
-  cp -v config.xml <path_to_backup> 
-```
 
 ## Source:
 - https://blog.separatewavelengths.com/2018/11/04/installing-windows-10-in-qemu-with-kvm/
