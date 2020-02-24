@@ -1,4 +1,4 @@
-## Sytem building
+## System Building
 [Build VM (kvm) for system testing](documentation/kvm-related/kvm-building-vm.md)
 [Build vagrant box with libvirt provider](documentation/kvm-related/vagrant-libvirt-building.md)
 [Manage/config bluetooth devices via cli](documentation/bluetooth/file-transfer.md)
@@ -7,9 +7,10 @@
 ## Installing VM Guest
 [Windows Server 2012](documentation/kvm-related/install-windows-2012-server.md)
 
-## Sytem tunning
+## System Tunning
+[Virsh Management Guide ](documentation/kvm-related/manage-kvm.md)
 
-## Reliable docker images
+## Reliable Docker Images
 The followng links are links of most reliable and reliable docker images to deploy on your system via docker engine:
 
 | **Docker command**						 	 | **Docker Images link** 												 |
@@ -18,11 +19,9 @@ The followng links are links of most reliable and reliable docker images to depl
 | docker pull dperson/samba				 | https://hub.docker.com/r/dperson/samba     |
 | docker pull wouterds/rpi-jenkins | https://github.com/wouterds/rpi-jenkins    | 
 
-## Cheatsheet (virsh/vagrant/docker)
+## Cheatsheet (Virsh/Vagrant/Docker)
 
 * Docker
 * Vagrant
 * Virsh 
-
-
 
