@@ -4,7 +4,7 @@
 [Manage/config bluetooth devices via cli](documentation/bluetooth/file-transfer.md)
 [Run kanboard (trello alternatives) on localhost](documentation/docker/manage-kanboard-with-docker-service.md)
 
-## Sytem Tunning
+## System Tunning
 [Virsh Management Guide ](documentation/kvm-related/manage-kvm.md)
 
 ## Reliable Docker Images
@@ -16,11 +16,9 @@ The followng links are links of most reliable and reliable docker images to depl
 | docker pull dperson/samba				 | https://hub.docker.com/r/dperson/samba     |
 | docker pull wouterds/rpi-jenkins | https://github.com/wouterds/rpi-jenkins    | 
 
-## Cheatsheet (virsh/vagrant/docker)
+## Cheatsheet (Virsh/Vagrant/Docker)
 
 * Docker
 * Vagrant
 * Virsh 
-
-
 
