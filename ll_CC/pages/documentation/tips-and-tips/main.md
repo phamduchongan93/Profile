@@ -2,4 +2,4 @@
 [Create bootable usb](create-live-usb.md)
 [Locate files and perform command quickly](find-command.md)
 [Mounting block devices](howto-manage-block-device.md)
-[](troubleshoot-hardware.md)
+[Find hardware info with Linux command](troubleshoot-hardware.md)
