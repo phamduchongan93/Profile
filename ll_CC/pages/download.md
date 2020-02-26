@@ -10,4 +10,8 @@
 | http://archive.ubuntu.com/ubuntu/dists/														 | Ubuntu   |
 | https://osdn.net/projects/clonezilla/downloads/71822/clonezilla-live-2.6.4-10-amd64.iso/ | clonezilla(backup solution) | 
 
+# Dev/ops toolchains:
 
+1. Tombcat https://tomcat.apache.org/download-10.cgi 
+2. Maven http://maven.apache.org/
+3. 
