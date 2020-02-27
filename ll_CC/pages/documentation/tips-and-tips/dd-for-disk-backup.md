@@ -1,10 +1,10 @@
-# Using the the dd command to perform disk imaging and cloning.
+# Task: Using the the dd command to perform disk imaging and cloning.
 
 As you research around, the dd command is powerful and required proper confident of user. Before performing the operation, I want to address couple thing since these are important factors prior to using the command.
 
-- verify the size of block devices.
-- get the name of your device and fill in the following input and output parameters 'if=' 'of='
-- you can't perform dd command on a living system, meaning you must unmount the drive first. If I am mouting the `/dev/sda` drive and using it as a root directory I can't clone it to an image or to another disk. Therefore, you must create a live usb to perform dd command.  Some people claim that you can remount your current filesystem into readonly, this will prevent changes on the drive. User may perform dd command with readonly filesystem. This doesn't work all the time since your system often have daemons require read and write on the system.
+- Verify the size of block devices.
+- Get the name of your device and fill in the following input and output parameters 'if=' 'of='
+- You can't perform dd command on a living system, meaning you must unmount the drive first. If I am mouting the `/dev/sda` drive and using it as a root directory I can't clone it to an image or to another disk. Therefore, you must create a live usb to perform dd command.  Some people claim that you can remount your current filesystem into readonly, this will prevent changes on the drive. User may perform dd command with readonly filesystem. This doesn't work all the time since your system often have daemons require read and write on the system.
 
 
 As mentioned above, we will need an live usb to perform the backup. Follow this [instruction](create-live-usb.md) to create a **live usb **.
