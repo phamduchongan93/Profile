@@ -7,7 +7,7 @@
 `docker run -d --name kanboard -p 80:80 -t kanboard/kanboard:v1.2.8`
 
 **Note**: default login for first time launching are 'admin' for both user and password.
-kanboard is a well-provided platform, you can add users from your current host system as authetication portal for verification.
+kanboard is a well-provided platform, you can add users from your current host system as authentication portal for verification.
 
 ## Step3: Turn off/on service
 
@@ -32,16 +32,19 @@ tcp6       0      0 :::8080                 :::*                    LISTEN      
 tcp6       0      0 :::80                   :::*                    LISTEN      2359/lighttpd                                                    
 tcp6       0      0 2601:197:a80:5274:43620 2607:f8b0:4006:803::443 ESTABLISHED 27941/firefox
 ```
+
 I was able to find a way to stop this service by typing one of the following command.
 `sudo service lighttpd stop `
-The **lighttpd** service is the one caused the problem
+In short, the **lighttpd** service is the one caused the problem
+
+Then restart the service by running `docker restart <container_name>`
 
 2. Error loading config file:stat /home/user/.docker/config.json:Permission Denied
- This issue arised because the config.json is not set to docker group and current user as owner.
+This issue arise because the config.json is not set to docker group and current user as owner.
 `ls /home/<youruser>/.docker/config.json`
 The following is sample result.
 `-rw------- 1 anpham docker 181 Feb 11 09:17 config.json`
 I will type the following to change ownership of user and group
 `sudo chown anpham docker config.json`
-This will set the file's ownership to **anpham**, and it's belonged to **docker**************** group now.
+This will set the file's ownership to **anpham**, and it's belonged to **docker** group now.
  
