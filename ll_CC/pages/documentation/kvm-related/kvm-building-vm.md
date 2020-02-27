@@ -1,4 +1,4 @@
-# Howto create a kvm vm #
+# How to Create a KVM VM #
 The purpose of this article is describing the process of building a vm for system testing.
 
 ## Description ##
