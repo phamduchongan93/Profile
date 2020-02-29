@@ -9,6 +9,7 @@
 
 ## System Tunning
 [Virsh Management Guide ](documentation/kvm-related/manage-kvm.md)
+[Add new storage device](documentation/kvm-related/manage-storage.md)
 
 ## Reliable Docker Images
 The followng links are links of most reliable and reliable docker images to deploy on your system via docker engine:
