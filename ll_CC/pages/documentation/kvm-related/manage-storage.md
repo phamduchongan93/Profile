@@ -1,8 +1,9 @@
-
-## Adding Extra Storage Disk
-
+# Adding Extra Storage Disk
 
 1. Create an image file. By default, you should put our image file in `/var/lib/libvirt/images/` 
+```
+$ qemu-img create -f qcow2 -o size=40G ubuntu.img
+```
 
 2. Attach your disk to your VM
 ```

@@ -11,6 +11,9 @@
 [Virsh Management Guide ](documentation/kvm-related/manage-kvm.md)
 [Add New Storage Device](documentation/kvm-related/manage-storage.md)
 
+## GNS3 Series
+[Connect KVM VM to GNS3](documentation/gns3/connect-vm-to-gns3.md)
+
 ## Reliable Docker Images
 The followng links are links of most reliable and reliable docker images to deploy on your system via docker engine:
 
