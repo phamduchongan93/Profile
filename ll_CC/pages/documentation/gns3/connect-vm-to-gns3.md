@@ -1,8 +1,8 @@
 # Connect KVM VM to GNS3 
 
 ## Install GNS3
-- Download the latest gns3 application 
-- Add current user to kvm group. This is the most important task. Without this step, your gns3 can run kvm VM.
+- Download the latest gns3 application [here](https://www.gns3.com/)
+- Add current user to kvm group. This is the most important task. Without this step, your gns3 can't run kvm VM.
 ```
 sudo usermod -aG kvm $(whoami)
 ```
@@ -23,9 +23,9 @@ drwxr-xr-x 7 root         root         4096 Feb 29 23:35 ..
 -rw------- 1 libvirt-qemu kvm  107390828544 Feb 27 14:50 win10.qcow2
 ```
 
-As you can see, I have ubuntu-virt images full permissions, so this will assure my VM running over GNS3.
+As you can see, I have ubuntu-virt image provided with full permissions (read, write, execute), so this will assure my VM running over GNS3.
  
-**Note**: After connecting with NAT, you may need to issue `dhcpclient` command so that your interface can new ip address. For example, `dhcpclient ens4` will give and ip for my interface.
+**Note**: After connecting with NAT, you may need to issue `dhcpclient` command so that your interface can new ip address. For example, `dhcpclient ens4` will give an IP for my network interface.
 
 # Expected Result 
 ![](expected-result.jpg)
