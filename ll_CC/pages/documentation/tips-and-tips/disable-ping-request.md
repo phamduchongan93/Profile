@@ -1,4 +1,4 @@
-# Disable ping request from outside 
+# Disable Ping Request From Outside 
 
 ## Method 1: editing systl.conf
 
