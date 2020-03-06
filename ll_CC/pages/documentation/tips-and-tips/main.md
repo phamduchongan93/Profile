@@ -3,3 +3,4 @@
 [Locate files and perform command quickly](find-command.md)
 [Mounting block devices](howto-manage-block-device.md)
 [Find hardware info with Linux command](troubleshoot-hardware.md)
+[Disable Ping Request](disable-ping-request.md)
