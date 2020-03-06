@@ -1,6 +1,6 @@
 # Disable ping request from outside 
 
-Method 1: editing systl.conf
+## Method 1: editing systl.conf
 
 ```
 Edit /etc/sysctl.conf
@@ -13,14 +13,14 @@ sysctl -p
 
 ```
 
-Method2: Using iptables
+## Method2: Using iptables
 
 ```
 iptables -I INPUT -p icmp --icmp-type echo-request -j DROP
 
 ```
 
-# Method 3: Using cron
+## Method 3: Using cron
 
 ```
 sudo crontab -e
