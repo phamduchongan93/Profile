@@ -1,4 +1,4 @@
-# Snapshot Guide
+# VM Snapshot and Clone Guide
 
 ## Listing Current VM (domain) Snapshots
 
